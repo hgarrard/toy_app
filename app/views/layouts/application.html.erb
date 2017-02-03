@@ -8,7 +8,20 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="container-fluid">
+    <div class="page-header">
+      <h2>My Toy App is Great!</h2>
+    </div>
+    <nav class="navbar navbar-default">
+      <ul <ul class="nav nav-pills">
+        <li><a href="/">Home</a></li>
+        <li><a href="/users">Users</a></li>
+        <li><a href="/microposts">Microposts</a></li>
+        <li><a href="/static_pages/about">About</a></li>
+        <li><a href="/static_pages/help">Help</a></li>
+        <li><a href="/static_pages/testing">Testing</a></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
